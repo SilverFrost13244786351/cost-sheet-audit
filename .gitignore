@@ -1,0 +1,10 @@
+﻿# 生成物，不进版本库
+out/
+*.xlsx
+
+# Python 缓存
+__pycache__/
+*.pyc
+
+# 虚拟环境
+.venv/
