@@ -156,3 +156,28 @@ os.makedirs(目录, exist_ok=True)    # 建目录，已存在不报错
 | `isna` | `89` |
 | `duplicated` / `groupby.transform` / `assign` | `103–106` |
 | `ExcelWriter` / `to_excel` | `136–153` |
+
+---
+
+## 11. Git（版本控制）
+
+Git 的所有命令都认**当前目录**，敲之前先看提示符在哪。不在仓库里会报 atal: not a git repository。
+
+| 命令 | 干什么 |
+|---|---|
+| `git init` | 把当前目录变成仓库（只需一次） |
+| `git config user.name "名字"` / `git config user.email "邮箱"` | 第一次提交必须设，只设一次 |
+| `git status` | 看哪些文件改了、哪些待提交 |
+| `git add .` | 把改动放进暂存区（准备提交） |
+| `git commit -m "说明"` | 存一个版本，带一句说明 |
+| `git log --oneline` | 看提交历史，一行一个版本 |
+| `git diff` | 看具体改了哪几行 |
+
+**常见坑**
+
+- `fatal: not a git repository` → 目录不对，先 `cd` 到项目根
+- `warning: LF will be replaced by CRLF` → 换行符提示，忽略
+- `Please tell me who you are` → 那两条 `git config` 没敲
+- 提交前一定跑 `git status`，**别把 out/、*.xlsx 提交进去**（`.gitignore` 负责挡）
+
+**提交信息怎么写**：一句话说清“这次做了什么”，比如 `修复：合计行重复计算`，别写 `update`。
