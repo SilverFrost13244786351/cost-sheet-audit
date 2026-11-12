@@ -1,4 +1,3 @@
-pandas>=2.0
+﻿pandas>=2.0
 openpyxl>=3.1
-# 可选：做到最后一步（网页上传界面）时再装
-# streamlit>=1.30
+streamlit>=1.30
