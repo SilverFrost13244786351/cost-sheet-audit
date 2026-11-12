@@ -1,0 +1,2 @@
+﻿把界面截图存成这个文件夹里的 ui.png（全小写、不要中文名）。
+README.md 顶部引用的就是 docs/ui.png，存好之后 GitHub 上会自动显示。
